@@ -1,6 +1,6 @@
 {% set name = "pysmi" %}
-{% set version = "0.2.2" %}
-{% set sha256 = "2a315cc3e556b3428372b69da663a24d2f0df9e9ab075b022cb133855f25aef7" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "87b464df6e68dedc28959f3d16b57d5138c8959c0af5cdea9747df26e20858fc" %}
 
 package:
   name: {{ name|lower }}
@@ -14,13 +14,13 @@ source:
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
-
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
     - setuptools
+    - pip
   run:
     - python
     - ply

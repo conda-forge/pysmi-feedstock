@@ -14,12 +14,15 @@ A pure-Python implementation of SNMP/SMI MIB parsing and conversion library.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pysmi-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pysmi-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pysmi-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pysmi-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pysmi/badges/version.svg)](https://anaconda.org/conda-forge/pysmi)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pysmi/badges/downloads.svg)](https://anaconda.org/conda-forge/pysmi)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pysmi-green.svg)](https://anaconda.org/conda-forge/pysmi) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pysmi.svg)](https://anaconda.org/conda-forge/pysmi) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pysmi.svg)](https://anaconda.org/conda-forge/pysmi) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pysmi.svg)](https://anaconda.org/conda-forge/pysmi) |
 
 Installing pysmi
 ================
