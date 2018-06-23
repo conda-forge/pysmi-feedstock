@@ -1,6 +1,6 @@
 {% set name = "pysmi" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "87b464df6e68dedc28959f3d16b57d5138c8959c0af5cdea9747df26e20858fc" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "b1746f559b0d3dbaa6b7993936f215617271efde022dc3eb3166fd62380d8887" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - pip
