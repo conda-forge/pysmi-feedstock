@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysmi-feedstock
 
 Home: http:/pysmi.sf.net
 
-Package license: BSD 2-Clause
+Package license: BSD-2-Clause
 
 Summary: SNMP SMI/MIB Parser
 
