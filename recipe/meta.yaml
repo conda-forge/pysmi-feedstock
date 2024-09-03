@@ -1,6 +1,6 @@
 {% set name = "pysmi" %}
-{% set version = "1.4.4" %}
-{% set sha256 = "7c8e7cae880dc56ffca872452023a3aea4e695c67661d5739eb6d718ec91e1f3" %}
+{% set version = "1.5.0" %}
+{% set sha256 = "e42bcd3961de71d58186f7a7fa6adac133701ae74cd19e6376289d89593b0af2" %}
 
 package:
   name: {{ name|lower }}
