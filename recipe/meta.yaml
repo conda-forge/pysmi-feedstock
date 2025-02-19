@@ -1,6 +1,6 @@
 {% set name = "pysmi" %}
-{% set version = "1.5.9" %}
-{% set sha256 = "f6dfda838e3cba133169f1ff57f71a2841815d43db2e5c619b6e5db3b8560707" %}
+{% set version = "1.5.10" %}
+{% set sha256 = "258bee3bc0049c147bc4223a1cb10ba753254c1e8ee2c1c52b8464872ebf2ba3" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
