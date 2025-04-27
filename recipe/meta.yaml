@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core >=1.0.0
+    - flit-core >=3.9.0
     - setuptools
     - pip
   run:
