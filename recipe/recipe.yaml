@@ -1,23 +1,24 @@
 schema_version: 1
 
 context:
-  name: pysmi
-  version: "1.6.3"
-  sha256: 5d2eeb9e98bc149dee8f9256899d13789206769aab1637e33ac5f0dacaaf51fb
+  version: 2.0.0
 
 package:
-  name: ${{ name|lower }}
+  name: pysmi
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: ${{ sha256 }}
-  file_name: ${{ name }}-${{ version }}.tar.gz
+- url: https://files.pythonhosted.org/packages/source/p/pysmi/pysmi-${{ version }}.tar.gz
+  sha256: 9eeba85ed59c5de38f512fe9858ce3332864526f7efc8135b3e3f552666cf79b
 
 build:
   number: 0
-  noarch: python
   script: ${{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
+  python:
+    entry_points:
+    - mibcopy = pysmi.scripts.mibcopy:start
+    - mibdump = pysmi.scripts.mibdump:start
+  noarch: python
 
 requirements:
   host:
@@ -27,9 +28,9 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }},<4.0
-    - ply <4.0,>=3.11
     - jinja2 <4.0.0,>=3.1.3
-    - requests <3.0.0,>=2.26.0
+    - requests >=2.26.0
+    - lark >=1.1.9
 
 tests:
   - python:
